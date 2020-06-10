@@ -4,11 +4,10 @@
   padding-bottom: 170px;
   text-align: center;
   color: $white;
-  background-color: $blue;
-  background-image: url('../img/bg-blue-rectangle-2.svg');
+  background-image: url('../img/bg-blue-rectangle-2.svg'), linear-gradient(to top, $white 1px, $blue 1px);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left bottom -1px;
+  background-position: left bottom;
 
   &::after {
     content: '';

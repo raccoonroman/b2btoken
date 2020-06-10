@@ -1,23 +1,44 @@
 .video-box {
   position: relative;
-  max-width: 342px;
   margin: 0 auto;
-  padding: 8px 16px 40px;
+  padding-bottom: 56.25%;
   text-align: center;
   color: $dark;
+  border: 8px solid $light-gray;
+  border-radius: 20px;
+  box-shadow: -10px -10px 30px rgba(50, 122, 131, 0.3), 10px 10px 30px rgba(50, 122, 131, 0.3);
   background-color: #f6f7f8;
-  background-image: url('../img/video-icon.svg'), url('../img/circles.svg'), url('../img/bg-video.png');
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+  }
+}
+
+.video-box__overlay {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px 40px;
+  background-image: url('../img/video-icon.svg'), url('../img/circles.svg'), url('../img/bg-video-desktop.png');
   background-repeat: no-repeat;
   background-size: auto, auto, cover;
   background-position: bottom -7px right -7px, top left, center;
-  border: 7px solid $light-gray;
-  border-radius: 20px;
-  box-shadow: -10px -10px 30px rgba(50, 122, 131, 0.3), 10px 10px 30px rgba(50, 122, 131, 0.3);
+  border-radius: 13px;
 }
 
 .video-box__logo-icon {
-  display: block;
-  margin: 0 auto 12px;
+  margin-bottom: 12px;
 }
 
 .video-box__title {
@@ -27,11 +48,11 @@
 }
 
 .video-box__play-btn {
-  display: inline-block;
   padding: 8px;
+  background-color: transparent;
+  border: 0;
 
   svg {
     display: block;
-    margin: 0 auto;
   }
 }

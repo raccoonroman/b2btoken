@@ -4,19 +4,10 @@
   padding-bottom: 15px;
   color: $white;
   background-color: $blue;
-  background-image: linear-gradient(to top, $white 120px, $blue 120px);
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15vw 100vw 0 0;
-    border-color: $white transparent transparent;
-  }
+  background-image: url('../img/triangle.svg'), linear-gradient(to top, $white 120px, $blue 120px);
+  background-repeat: no-repeat;
+  background-size: contain, auto;
+  background-position: top center, center;
 }
 
 .explanation__title {

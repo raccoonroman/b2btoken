@@ -79,19 +79,50 @@
     <div class="container">
       <h2 class="explanation__title">Что такое В2ВToken?</h2>
       <p class="explanation__text">Токен - это превращение любого реального актива в виртуальный, в пересчете на условную единицу. Он нужен для простого перемещения права собственности на актив в электронном виде.</p>
-    </div>
-    <div class="explanation__video-wrapper">
-      <div class="video-box">
-        <svg class="video-box__logo-icon" width="111" height="28">
-          <use href="img/sprite.svg#logo-b2b-token-black"></use>
-        </svg>
-        <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
-        <a class="video-box__play-btn" href="#">
-          <svg width="34" height="33">
-            <use href="img/sprite.svg#play"></use>
+      <div class="video-box" data-video-box>
+        <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/buCD-_1UPn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-box__overlay" data-video-overlay>
+          <svg class="video-box__logo-icon" width="111" height="28">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
           </svg>
-        </a>
+          <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
+          <button class="video-box__play-btn" type="button" data-video-play>
+            <svg width="34" height="33">
+              <use href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
+  </section>
+  <section class="future">
+    <div class="container">
+      <p class="future__label">B2B Token</p>
+      <p class="future__title">Будущее уже здесь</p>
+      <p class="future__desc">Открытая сеть для хранения и перевода ваших активов</p>
+      <ul class="future__list">
+        <li class="future__item">
+          <svg class="future__item-icon" width="122" height="122">
+            <use href="img/sprite.svg#future-1"></use>
+          </svg>
+          <p class="future__item-title">B2BToken</p>
+          <p class="future__item-desc">Это токен подкрепленный физическим активом, которым является золото 999 пробы на бирже.</p>
+        </li>
+        <li class="future__item">
+          <svg class="future__item-icon" width="122" height="122">
+            <use href="img/sprite.svg#future-2"></use>
+          </svg>
+          <p class="future__item-title">Золото</p>
+          <p class="future__item-desc">На сегодняшний день это самое стабильное вложение, что обеспечивает защиту B2BToken от волатильности активов и гарантирует то, что токен никогда не опустится ниже стоимости чистого золота на бирже.</p>
+        </li>
+        <li class="future__item">
+          <svg class="future__item-icon" width="122" height="122">
+            <use href="img/sprite.svg#future-3"></use>
+          </svg>
+          <p class="future__item-title">Контроль</p>
+          <p class="future__item-desc">Управляйте активами со стабильной ценой! Удобно. Безопасно. Выгодно.</p>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
