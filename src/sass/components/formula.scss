@@ -1,0 +1,70 @@
+.formula {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #f3f3f8, $white);
+}
+
+.formula__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.formula__desc {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  color: $dark-gray;
+}
+
+.formula__note {
+  margin: 0;
+  margin-bottom: 60px;
+  color: $dark-gray;
+}
+
+.formula__price-value {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 67px;
+  color: $red;
+}
+
+.formula__price-label {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.formula__list {
+  @include list-reset;
+}
+
+.formula__item {
+  padding: 10px 0;
+}
+
+.formula__box {
+  padding: 40px 18px;
+  background: $white;
+  border: 1px solid $light-gray;
+  border-radius: 20px;
+}
+
+.formula__box-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
