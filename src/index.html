@@ -7,7 +7,75 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+<header class="header">
+  <div class="container header__container">
+    <div class="header__nav-wrapper">
+      <button class="header__hamburger" type="button" id="hamburger">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#menu"></use>
+        </svg>
+      </button>
+      <a class="header__logo-link" href="/">
+        <svg class="header__logo-icon" width="179" height="46">
+          <use href="img/sprite.svg#logo-b2b-token-white"></use>
+        </svg>
+      </a>
+      <nav class="header__nav" id="header-nav">
+        <a href="/" class="header__logo-link">
+          <svg class="header__logo-icon" width="235" height="60">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
+          </svg>
+        </a>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Початок роботи</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Переваги</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Поширені запитання</a>
+          </li>
+        </ul>
+        <a class="button button--red header__nav-button" href="#">авторизуватися</a>
+        <button class="header__close" type="button" id="header-close">
+          <svg width="32" height="32">
+            <use href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+      <a class="header__nav-link-language" href="#">Ua</a>
+      <a class="button button--red header__nav-button header__nav-button--mobile" href="#">почати зараз</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero__container">
+      <p class="hero__title">Безпечно. <br>Вигідно. <br>Зручно.</p>
+      <p class="hero__desc">B2B Token - найкращий спосіб зберігання своїх активів, <br>де б ви не були</p>
+      <a class="hero__btn" href="#">детальніше</a>
+    </div>
+  </section>
+  <section class="stats">
+    <div class="container stats__container">
+      <ul class="stats__list">
+        <li class="stats__item">
+          <p class="stats__value">401 $</p>
+          <p class="stats__label">Ціна токену</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">4 010 B2B</p>
+          <p class="stats__label">в продажу</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">+4</p>
+          <p class="stats__label">зміна</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
 <script src="js/script.js"></script>
 </body>
 </html>
