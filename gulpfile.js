@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
+var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
@@ -54,6 +55,7 @@ gulp.task('webp', function () { // не тестив
 gulp.task('css', function () {
   return gulp.src('src/sass/style.scss')
     .pipe(plumber())
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer() // autoprefixer({browsers: ['last 2 version']}),
@@ -61,8 +63,8 @@ gulp.task('css', function () {
     .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('style.min.css'))
+    .pipe(sourcemaps.write("."))
     .pipe(gulp.dest('build/css'))
-
     .pipe(server.stream());
 });
 
