@@ -5,10 +5,10 @@
   text-align: center;
   color: $white;
   background-color: $blue;
-  background-image: url(../img/bg-blue-rectangle-2.svg);
+  background-image: url('../img/bg-blue-rectangle-2.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left bottom;
+  background-position: left bottom -1px;
 
   &::after {
     content: '';
@@ -21,11 +21,6 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-}
-
-.hero__container {
-  position: relative;
-  z-index: 1;
 }
 
 .hero__title {

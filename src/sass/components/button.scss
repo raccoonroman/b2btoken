@@ -8,9 +8,22 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 30px;
+  transition: all 0.25s;
 
   &--red {
     color: $white;
     background-color: $red;
+  }
+
+  &--red:hover,
+  &--red:focus {
+    background-color: #ff7985;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus {
+    color: $gray;
+    background-color: $light;
   }
 }
