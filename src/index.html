@@ -321,6 +321,79 @@
       </ol>
     </div>
   </section>
+  <section class="sign">
+    <div class="container sign__container">
+      <div class="sign__wrapper">
+        <div class="sign__col">
+          <p class="sign__title">Будущее уже здесь</p>
+          <p class="sign__desc">Зарегистрируйтесь сейчас, чтобы хранить свои активы в безопасности и сохранности.</p>
+        </div>
+        <div class="sign__col">
+          <div class="sign-box">
+            <ul class="sign-box__tab-list">
+              <li class="sign-box__tab-item sign-box__tab-item--active">
+                <button class="sign-box__tab" type="button">Регистрация</button>
+              </li>
+              <li class="sign-box__tab-item">
+                <button class="sign-box__tab" type="button">Вход</button>
+              </li>
+            </ul>
+            <form class="sign-box__form sign-box__form--active" method="post" id="sign-up">
+              <ul class="sign-box__form-list">
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label sign-box__label--error">
+                    <span class="sign-box__label-text">Телефон</span>
+                    <input class="sign-box__input" type="tel" name="tel" placeholder="+ 380 (ХХ) ХХХ ХХ ХХ">
+                  </label>
+                  <p class="sign-box__form-text-error">тут указывать ошибку</p>
+                </li>
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">полное имя</span>
+                    <input class="sign-box__input" type="text" name="full-name" placeholder="Представтесь, пожалуйста">
+                  </label>
+                </li>
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">пароль (не меньше 6 символов)</span>
+                    <input class="sign-box__input" type="password" name="password" minlength="6" placeholder="Придумайте пароль">
+                    <button class="sign-box__eye-btn" type="button" aria-label="Показать/скрыть пароль"></button>
+                  </label>
+                </li>
+              </ul>
+              <button class="button button--red sign-box__submit" type="submit">зарегистрироваться</button>
+              <p class="sign-box__agreement">Нажимая кнопку "Зарегистрироваться", я соглашаюсь с <a class="blue" href="#!">политикой конфиденциальности</a> и подтверждаю? что я старше 18 лет</p>
+            </form>
+            <form class="sign-box__form" method="post" id="sign-in">
+              <ul class="sign-box__form-list">
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">Телефон</span>
+                    <input class="sign-box__input" type="tel" name="tel" placeholder="+ 380 (ХХ) ХХХ ХХ ХХ">
+                  </label>
+                </li>
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">пароль</span>
+                    <input class="sign-box__input" type="password" name="password" placeholder="******">
+                    <button class="sign-box__eye-btn" type="button" aria-label="Показать/скрыть пароль"></button>
+                  </label>
+                </li>
+              </ul>
+              <div class="sign-box__row">
+                <label class="sign-box__checkbox-label">
+                  <input class="visually-hidden sign-box__checkbox-input" type="checkbox" name="remember-me" checked>
+                  <span class="sign-box__checkbox-text">Запомнить меня</span>
+                </label>
+                <a class="sign-box__link" href="#">Забыли пароль?</a>
+              </div>
+              <button class="button button--red sign-box__submit" type="submit">войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <script src="js/main.js"></script>
 </body>

@@ -48,7 +48,7 @@
 
   &--bg-2 {
     background-image: url('../img/video-icon-3.svg'), url('../img/circles-red.svg'), url('../img/bg-video-desktop.png');
-    background-size: auto, auto, cover;
+    background-size: auto, 80%, cover;
     background-position: bottom right, top left, center;
   }
 }

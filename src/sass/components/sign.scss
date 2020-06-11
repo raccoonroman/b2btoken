@@ -1,0 +1,36 @@
+.sign {
+  padding: 36px 0;
+}
+
+.sign__container {
+  padding: 0;
+}
+
+.sign__wrapper {
+  padding: 80px 15px 40px;
+  border-radius: 20px;
+  color: $white;
+  background-color: $blue;
+  background-image: url('../img/bg-sign.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sign__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.sign__desc {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 25px;
+  color: $light-gray;
+}
