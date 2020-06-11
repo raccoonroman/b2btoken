@@ -34,7 +34,7 @@ gulp.task('sprite', function () {
     .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('img', function () { // не тестив
+gulp.task('img', function () {
   return gulp.src('src/img/*.{gif,png,jpg,jpeg,svg}')
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
