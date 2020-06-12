@@ -28,13 +28,13 @@
         </a>
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Початок роботи</a>
+            <a class="header__nav-link" href="#!">Початок роботи</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Переваги</a>
+            <a class="header__nav-link" href="#!">Переваги</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Поширені запитання</a>
+            <a class="header__nav-link" href="#!">Поширені запитання</a>
           </li>
         </ul>
         <a class="button button--red header__nav-button" href="#">авторизуватися</a>
@@ -44,7 +44,7 @@
           </svg>
         </button>
       </nav>
-      <a class="header__nav-link-language" href="#">Ua</a>
+      <a class="header__nav-link-language" href="#!">Ua</a>
       <a class="button button--red header__nav-button header__nav-button--mobile" href="#">почати зараз</a>
     </div>
   </div>
@@ -338,7 +338,7 @@
                 <button class="sign-box__tab" type="button">Вход</button>
               </li>
             </ul>
-            <form class="sign-box__form sign-box__form--active" method="post" id="sign-up">
+            <form class="sign-box__form" method="post" id="sign-up">
               <ul class="sign-box__form-list">
                 <li class="sign-box__form-item">
                   <label class="sign-box__label sign-box__label--error">
@@ -364,7 +364,7 @@
               <button class="button button--red sign-box__submit" type="submit">зарегистрироваться</button>
               <p class="sign-box__agreement">Нажимая кнопку "Зарегистрироваться", я соглашаюсь с <a class="blue" href="#!">политикой конфиденциальности</a> и подтверждаю? что я старше 18 лет</p>
             </form>
-            <form class="sign-box__form" method="post" id="sign-in">
+            <form class="sign-box__form sign-box__form--active" method="post" id="sign-in">
               <ul class="sign-box__form-list">
                 <li class="sign-box__form-item">
                   <label class="sign-box__label">
@@ -385,7 +385,7 @@
                   <input class="visually-hidden sign-box__checkbox-input" type="checkbox" name="remember-me" checked>
                   <span class="sign-box__checkbox-text">Запомнить меня</span>
                 </label>
-                <a class="sign-box__link" href="#">Забыли пароль?</a>
+                <a class="sign-box__link" href="#!">Забыли пароль?</a>
               </div>
               <button class="button button--red sign-box__submit" type="submit">войти</button>
             </form>
@@ -503,6 +503,53 @@
     </div>
   </section>
 </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__col footer__col--main">
+        <a href="/">
+          <svg width="217" height="56">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
+          </svg>
+        </a>
+        <p class="footer__text"><strong>Будущее для твоих денег</strong></p>
+        <a class="button button--red" href="#">авторизуватись</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">меню</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#!">Початок роботи</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#!">Переваги</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#!">Запитання</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Контакти</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="tel:0999999999">(099) 99 99 999</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="tel:0888888888">(088) 88 88 888</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--blue underline" href="#!">Зворотній звязок</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <small class="footer__copyright">© b2btoken.com, 2020—2140. All rights reserved</small>
+    </div>
+  </div>
+</footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>

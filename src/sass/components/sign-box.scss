@@ -193,3 +193,11 @@
 .sign-box__checkbox-input:checked + .sign-box__checkbox-text::before {
   background-image: url('../img/checkbox-on.svg');
 }
+
+.sign-box__checkbox-input:disabled + .sign-box__checkbox-text {
+  color: $light-gray;
+
+  &::before {
+    opacity: 0.3;
+  }
+}
