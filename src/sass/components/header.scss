@@ -3,6 +3,10 @@
   text-align: center;
   color: $white;
   background-color: $blue;
+
+  @include desktop {
+    padding: 15px 0;
+  }
 }
 
 .header__nav-wrapper {
@@ -10,10 +14,28 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .header__nav-button {
   display: none;
+  flex-shrink: 0;
+
+  &--desktop {
+    @include desktop {
+      display: inline-block;
+    }
+  }
+}
+
+.header__logo-link {
+  @include desktop {
+    margin-left: -24px;
+  }
 }
 
 .header__nav {
@@ -34,6 +56,17 @@
   font-size: 18px;
   line-height: 25px;
 
+  @include desktop {
+    position: static;
+    transform: translate(0);
+    height: auto;
+    padding: 0;
+    color: $white;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+  }
+
   &.active {
     transform: translate(0);
   }
@@ -41,6 +74,16 @@
   .header__nav-button {
     display: block;
     margin-top: 18px;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .header__logo-link {
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -56,6 +99,10 @@
   background-color: transparent;
   border: 0;
   padding: 0;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__hamburger {
@@ -65,6 +112,10 @@
   border: 0;
   padding: 0;
   background-color: transparent;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__nav-list {
@@ -72,10 +123,20 @@
 
   margin-top: auto;
   margin-bottom: auto;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .header__nav-item {
   margin: 18px 0;
+
+  @include desktop {
+    margin: 0;
+    padding: 5px 20px;
+  }
 }
 
 .header__nav-link {
@@ -85,9 +146,15 @@
 .header__logo-icon {
   display: block;
   margin: 0 auto;
+
+  @include desktop {
+    width: 304px;
+    height: 78px;
+  }
 }
 
 .header__nav-link-language {
+  flex-shrink: 0;
   width: 32px;
   height: 32px;
   display: flex;
@@ -102,6 +169,15 @@
   color: inherit;
   border-radius: 50%;
   border: 1px solid $white;
+
+  @include desktop {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: $fs-mobile;
+    line-height: $lh-mobile;
+  }
 
   &:active {
     background-color: rgba($white, 0.3);
