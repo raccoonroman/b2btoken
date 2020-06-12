@@ -10,6 +10,7 @@
   background-position: top center, center;
 
   @include desktop {
+    padding-bottom: 50px;
     background-image:
       url('../img/bg-explanation-icon.svg'),
       url('../img/triangle.svg'),

@@ -19,6 +19,11 @@
   line-height: 50px;
   font-weight: 700;
   color: $red;
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 67px;
+  }
 }
 
 .future__desc {
@@ -29,15 +34,28 @@
 
 .future__list {
   @include list-reset;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.future__item {
+  padding: 24px 0;
+
+  @include desktop {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: calc(100% / 3);
+  }
 }
 
 .future__item-icon {
   margin-bottom: 22px;
   border-radius: 20px;
-}
-
-.future__item {
-  padding: 24px 0;
 }
 
 .future__item-title {

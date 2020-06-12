@@ -12,7 +12,7 @@
   @include desktop {
     padding-top: 0;
     text-align: left;
-    background-image: url('../img/bg-blue-rectangle-3.svg'), linear-gradient(to top, $white 1px, $blue 1px);
+    background-image: url('../img/bg-blue-rectangle-4.svg'), linear-gradient(to top, $white 1px, $blue 1px);
 
     br {
       display: none;
@@ -40,11 +40,12 @@
   @include desktop {
     padding-top: 90px;
     padding-left: 100px;
+    padding-bottom: 80px;
 
     &::after {
       content: '';
       position: absolute;
-      top: 15px;
+      bottom: -154px;
       right: 15px;
       width: 486px;
       height: 530px;
@@ -58,6 +59,7 @@
 .hero__title {
   margin: 0;
   margin-bottom: 30px;
+  max-width: 720px;
   font-weight: 700;
   font-size: 36px;
   line-height: 50px;
@@ -72,6 +74,7 @@
 .hero__desc {
   margin: 0;
   margin-bottom: 30px;
+  max-width: 720px;
   font-size: 18px;
   line-height: 25px;
 
