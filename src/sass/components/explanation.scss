@@ -8,11 +8,28 @@
   background-repeat: no-repeat;
   background-size: contain, auto;
   background-position: top center, center;
+
+  @include desktop {
+    background-image:
+      url('../img/bg-explanation-icon.svg'),
+      url('../img/triangle.svg'),
+      url('../img/bg-explanation-square.svg'),
+      linear-gradient(to top, $white 350px, $blue 350px);
+    background-size: auto, contain, contain, auto;
+    background-position: top 12% right 8%, top center, bottom 300px center, center;
+  }
+}
+
+.explanation__container {
+  @include desktop {
+    padding-left: 100px;
+  }
 }
 
 .explanation__title {
   margin: 0;
   margin-top: 20px;
+  max-width: 440px;
   padding: 30px 0;
   font-weight: 700;
   font-size: 24px;
@@ -22,4 +39,10 @@
 .explanation__text {
   margin: 0;
   margin-bottom: 56px;
+  max-width: 440px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

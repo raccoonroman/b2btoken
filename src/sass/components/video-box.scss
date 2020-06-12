@@ -1,6 +1,7 @@
 .video-box {
   position: relative;
   margin: 0 auto;
+  max-width: 992px;
   padding-bottom: 56.25%;
   text-align: center;
   color: $dark;
@@ -36,9 +37,14 @@
   background-color: #f6f7f7;
   background-image: url('../img/video-icon.svg'), url('../img/circles.svg'), url('../img/bg-video-desktop.png');
   background-repeat: no-repeat;
-  background-size: auto, auto, cover;
+  background-size: auto, 55%, cover;
   background-position: bottom -7px right -7px, top left, center;
   border-radius: 13px;
+
+  @include desktop {
+    justify-content: flex-start;
+    background-size: 365px auto, 55%, cover;
+  }
 
   &--bg-1 {
     background-image: url('../img/video-icon-2.svg'), url('../img/circles.svg'), url('../img/bg-video-desktop.png');
@@ -56,8 +62,18 @@
 .video-box__logo-icon {
   flex-shrink: 0;
 
+  @include desktop {
+    width: 323px;
+    height: 83px;
+  }
+
   &--margin-bottom {
+    margin-top: 32px;
     margin-bottom: 12px;
+
+    @include desktop {
+      margin-bottom: 45px;
+    }
   }
 }
 
@@ -65,15 +81,26 @@
   margin: 0;
   font-size: $fs-mobile;
   line-height: $lh-mobile;
+
+  @include desktop {
+    margin-bottom: 18px;
+    font-size: 48px;
+    line-height: 67px;
+  }
 }
 
 .video-box__play-btn {
-  margin-bottom: auto;
+  margin-bottom: 32px;
   padding: 8px;
   background-color: transparent;
   border: 0;
 
   svg {
     display: block;
+
+    @include desktop {
+      width: 96px;
+      height: 96px;
+    }
   }
 }
