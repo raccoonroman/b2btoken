@@ -3,6 +3,11 @@
   padding-bottom: 40px;
   text-align: center;
   background: linear-gradient(to top, #f3f3f8 180px, $white 180px);
+
+  @include desktop {
+    padding-top: 80px;
+    background: linear-gradient(to top, #f3f3f8 240px, $white 240px);
+  }
 }
 
 .graphic__title {
@@ -22,10 +27,18 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $red;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .graphic__wrapper {
   overflow-x: scroll;
+
+  @include desktop {
+    overflow: auto;
+  }
 }
 
 .graphic__img {
@@ -34,4 +47,8 @@
   max-width: none;
   width: auto;
   max-height: 266px;
+
+  @include desktop {
+    max-height: 100%;
+  }
 }

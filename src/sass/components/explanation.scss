@@ -21,12 +21,6 @@
   }
 }
 
-.explanation__container {
-  @include desktop {
-    padding-left: 100px;
-  }
-}
-
 .explanation__title {
   margin: 0;
   margin-top: 20px;
@@ -35,6 +29,10 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
+
+  @include desktop {
+    padding-left: 100px;
+  }
 }
 
 .explanation__text {
@@ -43,6 +41,7 @@
   max-width: 440px;
 
   @include desktop {
+    padding-left: 100px;
     font-size: 18px;
     line-height: 25px;
   }
