@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__nav-wrapper">
+      <button class="header__hamburger" type="button" id="hamburger">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#menu"></use>
+        </svg>
+      </button>
+      <a class="header__logo-link" href="/">
+        <svg class="header__logo-icon" width="179" height="46">
+          <use href="img/sprite.svg#logo-b2b-token-white"></use>
+        </svg>
+      </a>
+      <nav class="header__nav" id="header-nav">
+        <a href="/" class="header__logo-link">
+          <svg class="header__logo-icon" width="235" height="60">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
+          </svg>
+        </a>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Початок роботи</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Переваги</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Поширені запитання</a>
+          </li>
+        </ul>
+        <a class="button button--red header__nav-button" href="#">авторизуватися</a>
+        <button class="header__close" type="button" id="header-close">
+          <svg width="32" height="32">
+            <use href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+      <a class="header__nav-link-language" href="#!">Ua</a>
+      <a class="button button--red header__nav-button header__nav-button--mobile" href="#">почати зараз</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="hero__title">Безпечно. <br>Вигідно. <br>Зручно.</p>
+      <p class="hero__desc">B2B Token - найкращий спосіб зберігання своїх активів, <br>де б ви не були</p>
+      <a class="button button--white hero__btn" href="#">детальніше</a>
+    </div>
+  </section>
+  <section class="stats">
+    <div class="container">
+      <ul class="stats__list">
+        <li class="stats__item">
+          <p class="stats__value">401 $</p>
+          <p class="stats__label">Ціна токену</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">4 010 B2B</p>
+          <p class="stats__label">в продажу</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">+4</p>
+          <p class="stats__label">зміна</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="explanation">
+    <div class="container">
+      <h2 class="explanation__title">Что такое В2ВToken?</h2>
+      <p class="explanation__text">Токен - это превращение любого реального актива в виртуальный, в пересчете на условную единицу. Он нужен для простого перемещения права собственности на актив в электронном виде.</p>
+      <div class="video-box video-box--shadow" data-video-box>
+        <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/buCD-_1UPn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-box__overlay" data-video-overlay>
+          <svg class="video-box__logo-icon video-box__logo-icon--margin-bottom" width="111" height="28">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
+          </svg>
+          <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
+          <button class="video-box__play-btn" type="button" data-video-play>
+            <svg width="34" height="33">
+              <use href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="future">
+    <div class="container">
+      <p class="future__label">B2B Token</p>
+      <p class="future__title">Будущее уже здесь</p>
+      <p class="future__desc">Открытая сеть для хранения и перевода ваших активов</p>
+      <ul class="future__list">
+        <li class="future__item">
+          <svg class="future__item-icon" width="122" height="122">
+            <use href="img/sprite.svg#future-1"></use>
+          </svg>
+          <p class="future__item-title">B2BToken</p>
+          <p class="future__item-desc">Это токен подкрепленный физическим активом, которым является золото 999 пробы на бирже.</p>
+        </li>
+        <li class="future__item">
+          <svg class="future__item-icon" width="122" height="122">
+            <use href="img/sprite.svg#future-2"></use>
+          </svg>
+          <p class="future__item-title">Золото</p>
+          <p class="future__item-desc">На сегодняшний день это самое стабильное вложение, что обеспечивает защиту B2BToken от волатильности активов и гарантирует то, что токен никогда не опустится ниже стоимости чистого золота на бирже.</p>
+        </li>
+        <li class="future__item">
+          <svg class="future__item-icon" width="122" height="122">
+            <use href="img/sprite.svg#future-3"></use>
+          </svg>
+          <p class="future__item-title">Контроль</p>
+          <p class="future__item-desc">Управляйте активами со стабильной ценой! Удобно. Безопасно. Выгодно.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="why">
+    <div class="container">
+      <p class="why__title">Почему B2BToken?</p>
+      <p class="why__desc">B2BToken обеспечен ценной чистого золота 999 пробы на бирже. Цена B2BToken привязана именно к курсу чистого золота на бирже, а не изделия. </p>
+      <ol class="why__list">
+        <li class="why__item">
+          <p class="why__item-title">Cтоимость</p>
+          <p class="why__item-desc"><strong class="red">1 B2BToken = 0,01 гр </strong><br>чистого золота на бирже <br>в день покупки или продажи</p>
+        </li>
+        <li class="why__item">
+          <p class="why__item-title">Актив</p>
+          <p class="why__item-desc">Покупая 1 B2BToken - Вы получаете <span class="red">высоколиквидный, удобный и стабильный цифровой актив</span>, который обеспечен физическим золотом и эквивалентен его стоимости</p>
+        </li>
+        <li class="why__item">
+          <p class="why__item-title">Рост на бирже</p>
+          <p class="why__item-desc">В отличии от Доллара $ или другой валюты, цена чистого золота постоянно растет</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="graphic">
+    <div class="container">
+      <p class="graphic__title">Взгляните на график роста стоимости золота на биржевом рынке</p>
+      <small class="graphic__tip">Для просмотра графика прокрутите фото.</small>
+      <div class="graphic__wrapper">
+        <img class="graphic__img" src="img/graphic.jpg" width="1198" height="405" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="formula">
+    <div class="container">
+      <h3 class="formula__title">Формула для подсчёта B2ВToken</h3>
+      <p class="formula__desc">На данный момент, сумма эмиссии (количество токенов, выпущенных на данный момент) B2ВToken составляет 5 600 000 единиц.</p>
+      <p class="formula__note">*Это обусловлено количеством зарегистрированных пользователей проекта В2В, число которых, на данный момент, составляет 560 000 участников. На одного участника, проект В2В выпускает по 10 B2ВToken.</p>
+      <svg class="formula__icon" width="79" height="80">
+        <use href="img/sprite.svg#formula"></use>
+      </svg>
+      <p class="formula__price-value">4,21 $</p>
+      <p class="formula__price-label">цена токена сегодня</p>
+      <ul class="formula__list">
+        <li class="formula__item">
+          <div class="formula__box">
+            <p class="formula__box-title">Как расчитать коэффициент</p>
+            <p class="formula__box-calc">
+              <span class="formula__box-numer">A <span>-</span> B</span>
+              <span class="formula__box-demon">X <span>-</span> Y</span>
+            </p>
+            <p class="formula__box-calc-desc"><strong>А</strong> - сумма всех выпущенных Токенов</p>
+            <p class="formula__box-calc-desc"><strong>Б</strong> - количество Токенов на руках</p>
+            <p class="formula__box-calc-desc"><strong>Х</strong> - количество заявок на покупку</p>
+            <p class="formula__box-calc-desc"><strong>Y</strong> - количество заявок на продажу</p>
+          </div>
+        </li>
+        <li class="formula__item">
+          <div class="formula__box">
+            <p class="formula__box-title">Как расчитать токен</p>
+            <p class="formula__box-calc formula__box-calc--text">Коэффициент <span class="gray"> х </span> 0,61$</p>
+            <p class="formula__box-subtitle">Стоимость B2ВToken рассчитывается по формуле:</p>
+            <p class="formula__box-calc-desc">Цена обеспечения * Коэффициент</p>
+            <p class="formula__box-calc-desc">Формула рассчёта коэффициента смотрите выше.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <p class="advantages__title">Преимущества</p>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <svg class="advantages__item-icon" width="102" height="102">
+            <use href="img/sprite.svg#advantage-1"></use>
+          </svg>
+          <p class="advantages__item-title">Cтабильность</p>
+          <p class="advantages__item-desc">B2ВToken на 100% обеспечен самым надежным активом на мировой бирже - золотом 999 пробы.</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__item-icon" width="102" height="102">
+            <use href="img/sprite.svg#advantage-2"></use>
+          </svg>
+          <p class="advantages__item-title">Прозрачность</p>
+          <p class="advantages__item-desc">График стоимости B2ВToken публикуется ежедневно в Вашем личном кабинете, где Вы можете в любой момент его купить или продать.</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__item-icon" width="102" height="102">
+            <use href="img/sprite.svg#advantage-3"></use>
+          </svg>
+          <p class="advantages__item-title">Безопасность</p>
+          <p class="advantages__item-desc">Мы гарантируем безопасность и высокую защиту Ваших активов - никто не может производить платежи от Вашего лица.</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__item-icon" width="102" height="102">
+            <use href="img/sprite.svg#advantage-4"></use>
+          </svg>
+          <p class="advantages__item-title">Поддержка</p>
+          <p class="advantages__item-desc">Независимо от того, где и в каком часовом поясе Вы находитесь, мы будем доступны, когда Вы обратитесь к нам.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="stages">
+    <div class="container">
+      <p class="stages__title">Начало работы с B2ВToken</p>
+      <p class="stages__desc">Простая и эффективная система конвертации ваших активов в цифру. Минимальное количество для приобретения - <strong class="red">10 B2BTOKEN.</strong></p>
+      <ol class="stages__list">
+        <li class="stages__item">
+          <p class="stages__item-title">Покупка</p>
+          <div class="stages__item-video">
+            <div class="video-box" data-video-box>
+              <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/mlFs3OXR9mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="video-box__overlay video-box__overlay--bg-1" data-video-overlay>
+                <svg class="video-box__logo-icon" width="160" height="42">
+                  <use href="img/sprite.svg#logo-b2b-token-black"></use>
+                </svg>
+                <h3 class="video-box__title">Как купить Токен?</h3>
+                <button class="video-box__play-btn" type="button" data-video-play>
+                  <svg width="34" height="33">
+                    <use href="img/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="stages__item-subtitle">Покупайте B2ВToken за считанные минуты в несколько простых шагов:</p>
+          <ol class="stages__item-steps">
+            <li class="stages__item-step">Зарегистрируйте электронный кошелек PerfectMoney, ADVCash, Payeer</li>
+            <li class="stages__item-step">Пополните долларовый кошелек</li>
+            <li class="stages__item-step">Войдите в личный кабинет B2B
+              <a class="red" href="https://my.b2bjewelry.global/">https://my.b2bjewelry.global/</a>
+            </li>
+            <li class="stages__item-step">Пополните ваш депозит</li>
+            <li class="stages__item-step">Нажмите кнопку<button type="button">ОБМЕН</button></li>
+            <li class="stages__item-step">Выберите вкладку<button type="button">ПОКУПКА</button></li>
+            <li class="stages__item-step">Нажмите кнопку<button type="button">ОБМЕНЯТЬ</button></li>
+            <li class="stages__item-step">Подтвердите платеж</li>
+          </ol>
+          <p class="stages__item-text"><strong>Поздравляем!!!</strong><br>Вы приобрели B2ВToken.<br>
+            Теперь вам нужно дождаться выгодного курса и вывести деньги в обратном порядке.</p>
+        </li>
+
+        <li class="stages__item">
+          <p class="stages__item-title">Продажа</p>
+          <div class="stages__item-video">
+            <div class="video-box" data-video-box>
+              <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/TxvpctgU_s8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="video-box__overlay video-box__overlay--bg-2" data-video-overlay>
+                <svg class="video-box__logo-icon" width="160" height="42">
+                  <use href="img/sprite.svg#logo-b2b-token-black"></use>
+                </svg>
+                <h3 class="video-box__title">Как продать токен,<br>вывести средства?</h3>
+                <button class="video-box__play-btn" type="button" data-video-play>
+                  <svg width="34" height="33">
+                    <use href="img/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="stages__item-subtitle">Как продать B2ВToken:</p>
+          <ol class="stages__item-steps">
+            <li class="stages__item-step">В Личном кабинете нажмите кнопку<button type="button">ОБМЕН</button></li>
+            <li class="stages__item-step">На вкладке Продажа введите количество  B2ВToken и нажмите кнопку<button type="button">ОБМЕНЯТЬ</button></li>
+          </ol>
+          <p class="stages__item-text">И через несколько минут <strong>деньги</strong> будут <strong>зачислены</strong> на ваш депозит</p>
+        </li>
+
+        <li class="stages__item">
+          <p class="stages__item-title">Вывод</p>
+          <p class="stages__item-subtitle">Как вывести деньги с депозита:</p>
+          <ol class="stages__item-steps">
+            <li class="stages__item-step">В выпадающем меню Депозита выберите кнопку<button type="button">ВЫВЕСТИ</button></li>
+            <li class="stages__item-step">Выберите удобный для Вас способ вывода:
+              <ul>
+                <li>Perfect Money</li>
+                <li>AdvCash</li>
+                <li>Payeer</li>
+                <li>Lightcoin</li>
+                <li>Tether</li>
+                <li>Bitcoin</li>
+                <li>Ethereum</li>
+              </ul>
+            </li>
+            <li class="stages__item-step">Нажмите кнопку<button type="button">ВЫВЕСТИ</button></li>
+            <li class="stages__item-step">Система автоматически переведет Вас на сервис для приема платежей Cash Most. Выберите способ вывода. Ниже Вы увидете ваш ID и доступный баланс.<br>Укажите Ваши данные:
+              <ul>
+                <li>номер кошелька</li>
+                <li>сумму, которую желаете вывести</li>
+              </ul>
+            </li>
+            <li class="stages__item-step">Нажмите кнопку<button type="button">СОЗДАТЬ ЗАЯВКУ<br>НА ВЫВОД</button></li>
+          </ol>
+          <p class="stages__item-text"><strong>Поздравляем!!!</strong><br>Ожидайте поступление средств на указанный счет.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="sign">
+    <div class="container sign__container">
+      <div class="sign__wrapper">
+        <div class="sign__col">
+          <p class="sign__title">Будущее уже здесь</p>
+          <p class="sign__desc">Зарегистрируйтесь сейчас, чтобы хранить свои активы в безопасности и сохранности.</p>
+        </div>
+        <div class="sign__col">
+          <div class="sign-box">
+            <ul class="sign-box__tab-list">
+              <li class="sign-box__tab-item active">
+                <a href="#sign-up" class="sign-box__tab">Регистрация
+              </a></li>
+              <li class="sign-box__tab-item">
+                <a href="#sign-in" class="sign-box__tab">Вход
+              </a></li>
+            </ul>
+            <form class="sign-box__form active" method="post" id="sign-up">
+              <ul class="sign-box__form-list">
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label sign-box__label--error">
+                    <span class="sign-box__label-text">Телефон</span>
+                    <input class="sign-box__input" type="tel" name="tel" placeholder="+ 380 (ХХ) ХХХ ХХ ХХ">
+                  </label>
+                  <p class="sign-box__form-text-error">тут указывать ошибку</p>
+                </li>
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">полное имя</span>
+                    <input class="sign-box__input" type="text" name="full-name" placeholder="Представтесь, пожалуйста">
+                  </label>
+                </li>
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">пароль (не меньше 6 символов)</span>
+                    <input class="sign-box__input" type="password" name="password" minlength="6" placeholder="Придумайте пароль">
+                    <button class="sign-box__eye-btn" type="button" aria-label="Показать/скрыть пароль"></button>
+                  </label>
+                </li>
+              </ul>
+              <button class="button button--red sign-box__submit" type="submit">зарегистрироваться</button>
+              <p class="sign-box__agreement">Нажимая кнопку "Зарегистрироваться", я соглашаюсь с <a class="blue" href="#!">политикой конфиденциальности</a> и подтверждаю? что я старше 18 лет</p>
+            </form>
+            <form class="sign-box__form" method="post" id="sign-in">
+              <ul class="sign-box__form-list">
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">Телефон</span>
+                    <input class="sign-box__input" type="tel" name="tel" placeholder="+ 380 (ХХ) ХХХ ХХ ХХ">
+                  </label>
+                </li>
+                <li class="sign-box__form-item">
+                  <label class="sign-box__label">
+                    <span class="sign-box__label-text">пароль</span>
+                    <input class="sign-box__input" type="password" name="password" placeholder="******">
+                    <button class="sign-box__eye-btn" type="button" aria-label="Показать/скрыть пароль"></button>
+                  </label>
+                </li>
+              </ul>
+              <div class="sign-box__row">
+                <label class="sign-box__checkbox-label">
+                  <input class="visually-hidden sign-box__checkbox-input" type="checkbox" name="remember-me" checked="checked">
+                  <span class="sign-box__checkbox-text">Запомнить меня</span>
+                </label>
+                <a class="sign-box__link" href="#!">Забыли пароль?</a>
+              </div>
+              <button class="button button--red sign-box__submit" type="submit">войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq">
+    <div class="container">
+      <p class="faq__title">Часто задаваемые вопросы</p>
+      <a class="button button--white faq__btn" href="#!">все вопросы</a>
+      <ul class="faq__list">
+        <li class="faq__item" data-faq-item>
+          <p class="faq__item-label" data-faq-label>
+            Что такое B2BToken?
+            <button class="faq__item-arrow" type="button">
+              <svg class="faq__item-arrow-icon" width="15" height="9" fill="#49A9B4">
+                <use href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="faq__item-content" data-faq-content>
+            <div class="faq__item-content-wrapper">
+              <p>B2BToken - это превращение реального актива (в нашем случае чистого золота) в виртуальный, в пересчете на условную единицу. Обеспечение золотом дает гарантию того что токен никогда не опустится ниже стоимости чистого золота на бирже.</p>
+              <p>Token - это цифровой актив. не путайте его с Coin.</p>
+              <p>Если говорить простым языком:<br>Token - это товар, Coin - это валюта.</p>
+            </div>
+          </div>
+        </li>
+        <li class="faq__item" data-faq-item>
+          <p class="faq__item-label" data-faq-label>
+            Какая базовая стоимость B2BToken?
+            <button class="faq__item-arrow" type="button">
+              <svg class="faq__item-arrow-icon" width="15" height="9" fill="#49A9B4">
+                <use href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="faq__item-content" data-faq-content>
+            <div class="faq__item-content-wrapper">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem dolores nemo voluptatibus libero, fuga perferendis maiores vel illum pariatur fugiat nesciunt asperiores velit. Rerum, nostrum. Atque unde deserunt provident.</p>
+            </div>
+          </div>
+        </li>
+        <li class="faq__item" data-faq-item>
+          <p class="faq__item-label" data-faq-label>
+            Какая минимальная сумма покупки B2BToken?
+            <button class="faq__item-arrow" type="button">
+              <svg class="faq__item-arrow-icon" width="15" height="9" fill="#49A9B4">
+                <use href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="faq__item-content" data-faq-content>
+            <div class="faq__item-content-wrapper">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem dolores nemo voluptatibus libero, fuga perferendis maiores vel illum pariatur fugiat nesciunt asperiores velit. Rerum, nostrum. Atque unde deserunt provident.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem dolores nemo voluptatibus libero, fuga perferendis maiores vel illum pariatur fugiat nesciunt asperiores velit. Rerum, nostrum. Atque unde deserunt provident.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem dolores nemo voluptatibus libero, fuga perferendis maiores vel illum pariatur fugiat nesciunt asperiores velit. Rerum, nostrum. Atque unde deserunt provident.</p>
+            </div>
+          </div>
+        </li>
+        <li class="faq__item" data-faq-item>
+          <p class="faq__item-label" data-faq-label>
+            Где я могу узнать график стоимости B2BToken?
+            <button class="faq__item-arrow" type="button">
+              <svg class="faq__item-arrow-icon" width="15" height="9" fill="#49A9B4">
+                <use href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="faq__item-content" data-faq-content>
+            <div class="faq__item-content-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ipsam.</p>
+            </div>
+          </div>
+        </li>
+        <li class="faq__item" data-faq-item>
+          <p class="faq__item-label" data-faq-label>
+            Какое количество B2BToken на данный момент?
+            <button class="faq__item-arrow" type="button">
+              <svg class="faq__item-arrow-icon" width="15" height="9" fill="#49A9B4">
+                <use href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="faq__item-content" data-faq-content>
+            <div class="faq__item-content-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in reiciendis quo quaerat, ullam eligendi quasi deserunt fuga laborum ipsum odio voluptatem. Enim consequuntur voluptatum ipsum alias impedit, debitis nobis.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="explanation">
+    <div class="container">
+      <h2 class="explanation__title">Что такое В2ВToken?</h2>
+      <p class="explanation__text">Токен - это превращение любого реального актива в виртуальный, в пересчете на условную единицу. Он нужен для простого перемещения права собственности на актив в электронном виде.</p>
+      <div class="video-box video-box--shadow" data-video-box>
+        <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/buCD-_1UPn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-box__overlay" data-video-overlay>
+          <svg class="video-box__logo-icon video-box__logo-icon--margin-bottom" width="111" height="28">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
+          </svg>
+          <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
+          <button class="video-box__play-btn" type="button" data-video-play>
+            <svg width="34" height="33">
+              <use href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__col footer__col--main">
+        <a href="/">
+          <svg width="217" height="56">
+            <use href="img/sprite.svg#logo-b2b-token-black"></use>
+          </svg>
+        </a>
+        <p class="footer__text"><strong>Будущее для твоих денег</strong></p>
+        <a class="button button--red" href="#">авторизуватись</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">меню</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#!">Початок роботи</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#!">Переваги</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#!">Запитання</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Контакти</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="tel:0999999999">(099) 99 99 999</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="tel:0888888888">(088) 88 88 888</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--blue underline" href="#!">Зворотній звязок</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <small class="footer__copyright">© b2btoken.com, 2020—2140. All rights reserved</small>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
