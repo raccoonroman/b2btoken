@@ -45,13 +45,13 @@
         </button>
       </nav>
       <a class="header__nav-link-language" href="#!">Ua</a>
-      <a class="button button--red header__nav-button header__nav-button--mobile" href="#">почати зараз</a>
+      <a class="button button--red header__nav-button header__nav-button--desktop" href="#">почати зараз</a>
     </div>
   </div>
 </header>
 <main>
   <section class="hero">
-    <div class="container">
+    <div class="container hero__container">
       <p class="hero__title">Безпечно. <br>Вигідно. <br>Зручно.</p>
       <p class="hero__desc">B2B Token - найкращий спосіб зберігання своїх активів, <br>де б ви не були</p>
       <a class="button button--white hero__btn" href="#">детальніше</a>
@@ -85,8 +85,8 @@
           <svg class="video-box__logo-icon video-box__logo-icon--margin-bottom" width="111" height="28">
             <use href="img/sprite.svg#logo-b2b-token-black"></use>
           </svg>
-          <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
-          <button class="video-box__play-btn" type="button" data-video-play>
+          <h3 class="video-box__title video-box__title--bigger">Что такое В2ВToken? <br>Простыми словами.</h3>
+          <button class="video-box__play-btn video-box__play-btn--bigger" type="button" data-video-play>
             <svg width="34" height="33">
               <use href="img/sprite.svg#play"></use>
             </svg>
@@ -182,7 +182,7 @@
           <div class="formula__box">
             <p class="formula__box-title">Как расчитать токен</p>
             <p class="formula__box-calc formula__box-calc--text">Коэффициент <span class="gray"> х </span> 0,61$</p>
-            <p class="formula__box-subtitle">Стоимость B2ВToken рассчитывается по формуле:</p>
+            <p class="formula__box-subtitle">Стоимость B2ВToken<br>рассчитывается по формуле:</p>
             <p class="formula__box-calc-desc">Цена обеспечения * Коэффициент</p>
             <p class="formula__box-calc-desc">Формула рассчёта коэффициента смотрите выше.</p>
           </div>
@@ -316,7 +316,7 @@
             </li>
             <li class="stages__item-step">Нажмите кнопку<button type="button">СОЗДАТЬ ЗАЯВКУ<br>НА ВЫВОД</button></li>
           </ol>
-          <p class="stages__item-text"><strong>Поздравляем!!!</strong><br>Ожидайте поступление средств на указанный счет.</p>
+          <p class="stages__item-text"><strong>Поздравляем!!!</strong><br>Ожидайте поступление средств<br>на указанный счет.</p>
         </li>
       </ol>
     </div>
@@ -395,7 +395,7 @@
     </div>
   </section>
   <section class="faq">
-    <div class="container">
+    <div class="container faq__container">
       <p class="faq__title">Часто задаваемые вопросы</p>
       <a class="button button--white faq__btn" href="#!">все вопросы</a>
       <ul class="faq__list">
@@ -482,22 +482,24 @@
       </ul>
     </div>
   </section>
-  <section class="explanation">
+  <section class="explanation explanation--bottom">
     <div class="container">
       <h2 class="explanation__title">Что такое В2ВToken?</h2>
       <p class="explanation__text">Токен - это превращение любого реального актива в виртуальный, в пересчете на условную единицу. Он нужен для простого перемещения права собственности на актив в электронном виде.</p>
-      <div class="video-box video-box--shadow" data-video-box>
-        <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/buCD-_1UPn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="video-box__overlay" data-video-overlay>
-          <svg class="video-box__logo-icon video-box__logo-icon--margin-bottom" width="111" height="28">
-            <use href="img/sprite.svg#logo-b2b-token-black"></use>
-          </svg>
-          <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
-          <button class="video-box__play-btn" type="button" data-video-play>
-            <svg width="34" height="33">
-              <use href="img/sprite.svg#play"></use>
+      <div class="explanation__video">
+        <div class="video-box video-box--shadow" data-video-box>
+          <iframe class="video-box__iframe" width="560" height="315" src="https://www.youtube.com/embed/buCD-_1UPn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-box__overlay video-box__overlay--3" data-video-overlay>
+            <svg class="video-box__logo-icon" width="111" height="28">
+              <use href="img/sprite.svg#logo-b2b-token-black"></use>
             </svg>
-          </button>
+            <h3 class="video-box__title">Что такое В2ВToken? <br>Простыми словами.</h3>
+            <button class="video-box__play-btn" type="button" data-video-play>
+              <svg width="34" height="33">
+                <use href="img/sprite.svg#play"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
