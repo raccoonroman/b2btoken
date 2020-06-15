@@ -19,30 +19,77 @@
     background-size: auto, contain, contain, auto;
     background-position: top 12% right 8%, top center, bottom 300px center, center;
   }
+
+  &--bottom {
+    @include desktop {
+      background-image:
+        url('../img/triangle.svg'),
+        url('../img/bg-explanation-square.svg'),
+        linear-gradient(to top, $white 50px, $blue 50px);
+      background-size: contain, contain, auto;
+      background-position: top center, bottom center, center;
+    }
+  }
 }
 
 .explanation__title {
   margin: 0;
   margin-top: 20px;
-  max-width: 440px;
   padding: 30px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
 
   @include desktop {
+    padding-top: 50px;
     padding-left: 100px;
+    padding-right: 50%;
   }
 }
 
 .explanation__text {
   margin: 0;
-  margin-bottom: 56px;
-  max-width: 440px;
+  padding-bottom: 56px;
 
   @include desktop {
+    padding-bottom: 80px;
+    padding-right: 50%;
     padding-left: 100px;
     font-size: 18px;
     line-height: 25px;
+  }
+}
+
+.explanation__video {
+  @include desktop {
+    position: absolute;
+    bottom: 60%;
+    transform: translateY(50%);
+    right: 30px;
+    width: 50%;
+    padding-left: 60px;
+
+    .video-box--shadow {
+      box-shadow: none;
+    }
+
+    .video-box__logo-icon {
+      flex-shrink: 0;
+      min-height: 20px;
+      width: 192px;
+      height: 50px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .video-box__title {
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    .video-box__play-btn svg {
+      width: 56px;
+      height: 56px;
+    }
   }
 }

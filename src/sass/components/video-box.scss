@@ -43,7 +43,7 @@
 
   @include desktop {
     justify-content: flex-start;
-    background-size: 365px auto, 55%, cover;
+    background-size: 37%, 55%, cover;
   }
 
   &--bg-1 {
@@ -52,7 +52,7 @@
     background-position: bottom right, top left, center;
 
     @include desktop {
-      background-size: 275px auto, 80%, cover;
+      background-size: 44%, 80%, cover;
     }
   }
 
@@ -62,7 +62,13 @@
     background-position: bottom right, top left, center;
 
     @include desktop {
-      background-size: 275px auto, 80%, cover;
+      background-size: 43%, 80%, cover;
+    }
+  }
+
+  &--3 {
+    @include desktop {
+      background-size: 36%, 55%, cover;
     }
   }
 }
