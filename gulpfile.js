@@ -99,6 +99,7 @@ gulp.task('copy', function () {
       'src/fonts/**/*.{woff,woff2}',
       'src/img/*.*', // маска *.* не позволяет копировать папки sprite-svg
       'src/js/*.js',
+      'src/favicon/*',
     ], {
       base: 'src'
     })

@@ -1,4 +1,5 @@
 .video-box {
+  overflow: hidden;
   position: relative;
   margin: 0 auto;
   max-width: 992px;
@@ -20,6 +21,7 @@
     width: 100%;
     height: 100%;
     border-radius: 13px;
+    overflow: hidden;
   }
 }
 
