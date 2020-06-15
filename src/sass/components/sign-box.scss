@@ -1,9 +1,16 @@
 .sign-box {
-  max-width: 545px;
+  width: 545px;
+  max-width: 100%;
   padding: 32px 20px;
   border-radius: 20px;
   color: $dark-gray;
   background-color: $white;
+
+  @include desktop {
+    padding: 52px 60px;
+    padding-right: 100px;
+    border-radius: 50px;
+  }
 }
 
 .sign-box__tab-list {

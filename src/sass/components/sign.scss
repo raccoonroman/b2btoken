@@ -6,8 +6,10 @@
   }
 }
 
-.sign__container {
-  padding: 0;
+@media (max-width: 767px) {
+  .sign__container {
+    padding: 0;
+  }
 }
 
 .sign__wrapper {
@@ -17,25 +19,50 @@
   background-color: $blue;
   background-image: url('../img/bg-sign.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-position: center top;
+
+  @include desktop {
+    padding: 60px 60px 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
 }
 
 .sign__title {
   margin: 0;
   margin-bottom: 30px;
+  max-width: 500px;
   padding: 0 20px;
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
+
+  @include desktop {
+    padding-top: 45px;
+  }
 }
 
 .sign__desc {
   margin: 0;
-  max-width: 500px;
   margin-bottom: 56px;
+  max-width: 500px;
   padding: 0 20px;
   font-size: 18px;
   line-height: 25px;
   color: $light-gray;
+}
+
+.sign__col {
+  &:first-child {
+    @include desktop {
+      padding-bottom: 320px;
+      background-image: url('../img/sign-box.svg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center bottom;
+    }
+  }
 }

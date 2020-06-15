@@ -24,6 +24,10 @@
   @include list-reset;
 
   counter-reset: counter-2;
+
+  @include desktop {
+    padding-left: 80px;
+  }
 }
 
 .stages__item {

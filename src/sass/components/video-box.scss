@@ -71,6 +71,8 @@
   flex-shrink: 0;
 
   @include desktop {
+    flex-shrink: 1;
+    min-height: 64px;
     width: 323px;
     height: 83px;
   }
