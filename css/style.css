@@ -758,6 +758,7 @@ body {
       height: 56px; } }
 
 .video-box {
+  overflow: hidden;
   position: relative;
   margin: 0 auto;
   max-width: 992px;
@@ -1302,7 +1303,8 @@ body {
       top: 80px;
       right: 0;
       width: 60%;
-      padding-left: 30px; } }
+      padding-left: 30px;
+      z-index: 2; } }
 
 .stages__item-subtitle {
   margin: 0;
