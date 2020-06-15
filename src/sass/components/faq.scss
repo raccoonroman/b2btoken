@@ -1,6 +1,14 @@
 .faq {
   padding: 60px 0 40px;
   text-align: center;
+
+  @include desktop {
+    padding-bottom: 80px;
+  }
+}
+
+.faq__container {
+  max-width: 996px;
 }
 
 .faq__title {
@@ -9,10 +17,23 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
+
+  @include desktop {
+    margin-bottom: 70px;
+    padding-top: 15px;
+    padding-left: 240px;
+    padding-right: 240px;
+  }
 }
 
 .faq__btn {
   margin-bottom: 40px;
+
+  @include desktop {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
 }
 
 .faq__list {
@@ -48,6 +69,7 @@
 }
 
 .faq__item-label {
+  cursor: pointer;
   position: relative;
   margin: 0;
   min-height: 88px;
@@ -57,6 +79,11 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 28px;
+  }
 
   &.active .faq__item-arrow-icon {
     fill: $light-gray;
@@ -79,12 +106,18 @@
   padding: 0 40px 32px;
   font-size: 14px;
   line-height: 24px;
+  color: $dark-gray;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
   p:first-child {
     margin-top: 0;
   }
 
   p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 }
