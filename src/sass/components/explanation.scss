@@ -15,17 +15,18 @@
       url('../img/bg-explanation-icon.svg'),
       url('../img/triangle.svg'),
       url('../img/bg-explanation-square.svg'),
-      linear-gradient(to top, $white 350px, $blue 350px);
+      linear-gradient(to top, $white 380px, $blue 380px);
     background-size: auto, contain, contain, auto;
     background-position: top 12% right 8%, top center, bottom 300px center, center;
   }
 
   &--bottom {
     @include desktop {
+      margin-bottom: 40px;
       background-image:
         url('../img/triangle.svg'),
         url('../img/bg-explanation-square.svg'),
-        linear-gradient(to top, $white 50px, $blue 50px);
+        linear-gradient(to top, $white 80px, $blue 80px);
       background-size: contain, contain, auto;
       background-position: top center, bottom center, center;
     }
