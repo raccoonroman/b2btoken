@@ -13,7 +13,8 @@
 }
 
 .stages__desc {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 610px;
   text-align: center;
   line-height: 24px;
   color: $dark-gray;
@@ -28,6 +29,11 @@
 .stages__item {
   padding: 24px 0;
   counter-increment: counter-2;
+
+  @include desktop {
+    position: relative;
+    padding-right: 60%;
+  }
 }
 
 .stages__item-title {
@@ -52,6 +58,14 @@
 
 .stages__item-video {
   margin-bottom: 40px;
+
+  @include desktop {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 60%;
+    padding-left: 30px;
+  }
 }
 
 .stages__item-subtitle {

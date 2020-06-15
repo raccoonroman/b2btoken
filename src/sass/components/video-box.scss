@@ -50,12 +50,20 @@
     background-image: url('../img/video-icon-2.svg'), url('../img/circles.svg'), url('../img/bg-video-desktop.png');
     background-size: auto, 80%, cover;
     background-position: bottom right, top left, center;
+
+    @include desktop {
+      background-size: 275px auto, 80%, cover;
+    }
   }
 
   &--bg-2 {
     background-image: url('../img/video-icon-3.svg'), url('../img/circles-red.svg'), url('../img/bg-video-desktop.png');
     background-size: auto, 80%, cover;
     background-position: bottom right, top left, center;
+
+    @include desktop {
+      background-size: 275px auto, 80%, cover;
+    }
   }
 }
 
@@ -84,8 +92,15 @@
 
   @include desktop {
     margin-bottom: 18px;
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  &--bigger {
+    @include desktop {
+      font-size: 48px;
+      line-height: 67px;
+    }
   }
 }
 
@@ -94,10 +109,18 @@
   padding: 8px;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 
   svg {
     display: block;
 
+    @include desktop {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &--bigger svg {
     @include desktop {
       width: 96px;
       height: 96px;

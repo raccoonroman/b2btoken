@@ -6,25 +6,29 @@
 }
 
 .formula__title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 620px;
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
 }
 
 .formula__desc {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 620px;
   font-size: 18px;
   line-height: 25px;
   color: $dark-gray;
 }
 
 .formula__note {
-  margin: 0;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
+  max-width: 620px;
   color: $dark-gray;
+}
+
+.formula__icon {
+  margin-bottom: 12px;
 }
 
 .formula__price-value {
@@ -49,17 +53,35 @@
 
 .formula__list {
   @include list-reset;
+
+  @include desktop {
+    max-width: 1016px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .formula__item {
   padding: 10px 0;
+
+  @include desktop {
+    padding: 10px;
+    width: 50%;
+  }
 }
 
 .formula__box {
+  height: 100%;
   padding: 40px 18px 24px;
   background: $white;
   border: 1px solid $light-gray;
   border-radius: 20px;
+
+  @include desktop {
+    border-radius: 50px;
+  }
 }
 
 .formula__box-title {
@@ -91,6 +113,12 @@
     background-color: $light-gray;
   }
 
+  &--text {
+    @include desktop {
+      padding: 28px 0;
+    }
+  }
+
   &--text::before {
     display: none;
   }
@@ -111,9 +139,13 @@
 }
 
 .formula__box-calc-desc {
-  margin: 0;
-  margin: 16px 0;
+  margin: 16px auto;
+  max-width: 326px;
   color: $dark-gray;
+
+  @include desktop {
+    text-align: left;
+  }
 
   strong {
     color: $dark;
@@ -121,9 +153,12 @@
 }
 
 .formula__box-subtitle {
-  margin: 0;
-  margin-top: 24px;
-  margin-bottom: 17px;
+  margin: 24px auto 17px;
+  max-width: 326px;
   font-weight: 700;
   color: $main;
+
+  @include desktop {
+    text-align-last: left;
+  }
 }

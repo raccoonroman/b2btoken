@@ -1,5 +1,9 @@
 .sign {
   padding: 36px 0;
+
+  @include desktop {
+    padding: 50px 0;
+  }
 }
 
 .sign__container {
@@ -28,6 +32,7 @@
 
 .sign__desc {
   margin: 0;
+  max-width: 500px;
   margin-bottom: 56px;
   padding: 0 20px;
   font-size: 18px;
