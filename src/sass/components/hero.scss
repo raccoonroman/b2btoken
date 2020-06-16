@@ -6,7 +6,7 @@
   color: $white;
   background-image: url('../img/bg-blue-rectangle-2.svg'), linear-gradient(to top, $white 1px, $blue 1px);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
   background-position: left bottom;
 
   @include desktop {
@@ -57,14 +57,14 @@
 }
 
 .hero__title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   max-width: 720px;
   font-weight: 700;
   font-size: 36px;
   line-height: 50px;
 
   @include desktop {
+    margin-left: 0;
     margin-bottom: 13px;
     font-size: 48px;
     line-height: 67px;
@@ -72,13 +72,13 @@
 }
 
 .hero__desc {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   max-width: 720px;
   font-size: 18px;
   line-height: 25px;
 
   @include desktop {
+    margin-left: 0;
     margin-bottom: 40px;
   }
 }

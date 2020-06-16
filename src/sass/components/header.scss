@@ -65,6 +65,8 @@
     background-color: transparent;
     display: block;
     margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   &.active {
@@ -135,6 +137,10 @@
 
   @include desktop {
     margin: 0;
+    padding: 5px 10px;
+  }
+
+  @media (min-width: 1200px) {
     padding: 5px 20px;
   }
 }
@@ -148,6 +154,11 @@
   margin: 0 auto;
 
   @include desktop {
+    width: 210px;
+    height: auto;
+  }
+
+  @media (min-width: 1200px) {
     width: 304px;
     height: 78px;
   }
@@ -177,6 +188,8 @@
     height: 50px;
     font-size: $fs-mobile;
     line-height: $lh-mobile;
+    font-weight: 400;
+    text-transform: none;
   }
 
   &:active {

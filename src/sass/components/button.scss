@@ -12,6 +12,11 @@
   transition: all 0.25s;
   line-height: $lh-mobile;
 
+  @media (max-width: 374px) {
+    font-size: 14px;
+    padding: 11px 20px 10px;
+  }
+
   &--red {
     color: $white;
     background-color: $red;

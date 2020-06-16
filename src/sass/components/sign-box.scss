@@ -32,12 +32,21 @@
   font-size: 24px;
   line-height: 33px;
   color: $dark;
+
+  @media (max-width: 374px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .sign-box__tab-item {
   min-width: 136px;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (max-width: 374px) {
+    min-width: 120px;
+  }
 
   &.active .sign-box__tab::before {
     content: '';
