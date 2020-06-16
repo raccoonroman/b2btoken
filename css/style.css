@@ -326,7 +326,8 @@ template {
 a {
   text-decoration: none; }
 
-img {
+img,
+svg {
   max-width: 100%;
   height: auto; }
 
@@ -391,6 +392,10 @@ body {
   border-radius: 30px;
   transition: all 0.25s;
   line-height: 26px; }
+  @media (max-width: 374px) {
+    .button {
+      font-size: 14px;
+      padding: 11px 20px 10px; } }
   .button--red {
     color: #fff;
     background-color: #ff2639; }
@@ -462,7 +467,9 @@ body {
       color: #fff;
       background-color: transparent;
       display: block;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 26px; } }
   .header__nav.active {
     transform: translate(0); }
   .header__nav .header__nav-button {
@@ -518,6 +525,9 @@ body {
   @media (min-width: 992px) {
     .header__nav-item {
       margin: 0;
+      padding: 5px 10px; } }
+  @media (min-width: 1200px) {
+    .header__nav-item {
       padding: 5px 20px; } }
 
 .header__nav-link {
@@ -527,6 +537,10 @@ body {
   display: block;
   margin: 0 auto; }
   @media (min-width: 992px) {
+    .header__logo-icon {
+      width: 210px;
+      height: auto; } }
+  @media (min-width: 1200px) {
     .header__logo-icon {
       width: 304px;
       height: 78px; } }
@@ -554,7 +568,9 @@ body {
       width: 50px;
       height: 50px;
       font-size: 16px;
-      line-height: 26px; } }
+      line-height: 26px;
+      font-weight: 400;
+      text-transform: none; } }
   .header__nav-link-language:active {
     background-color: rgba(255, 255, 255, 0.3); }
 
@@ -566,7 +582,7 @@ body {
   color: #fff;
   background-image: url("../img/bg-blue-rectangle-2.svg"), linear-gradient(to top, #fff 1px, #49a9b4 1px);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
   background-position: left bottom; }
   @media (min-width: 992px) {
     .hero {
@@ -588,6 +604,8 @@ body {
     @media (min-width: 992px) {
       .hero::after {
         display: none; } }
+  .hero--404::after {
+    display: none; }
 
 @media (min-width: 992px) {
   .hero__container {
@@ -605,28 +623,38 @@ body {
       background-repeat: no-repeat;
       background-size: contain; } }
 
+.hero__container--404 {
+  padding-bottom: 0; }
+
+.hero__container--404::after {
+  display: none; }
+
 .hero__title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   max-width: 720px;
   font-weight: 700;
   font-size: 36px;
   line-height: 50px; }
   @media (min-width: 992px) {
     .hero__title {
-      margin-bottom: 13px;
+      margin-left: 0;
+      margin-bottom: 20px;
       font-size: 48px;
-      line-height: 67px; } }
+      line-height: 56px; } }
+  .hero__title--404 br {
+    display: block; }
 
 .hero__desc {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   max-width: 720px;
   font-size: 18px;
   line-height: 25px; }
   @media (min-width: 992px) {
     .hero__desc {
+      margin-left: 0;
       margin-bottom: 40px; } }
+  .hero__desc--404 br {
+    display: block; }
 
 .hero__btn {
   margin-bottom: 30px;
@@ -634,6 +662,22 @@ body {
   z-index: 1;
   border: 0;
   box-shadow: 0 4px 5px rgba(83, 83, 83, 0.1); }
+
+@media (min-width: 992px) {
+  .hero__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px; } }
+
+@media (min-width: 992px) {
+  .hero__col {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+.hero__col:first-child {
+  flex-shrink: 0; }
 
 .stats {
   padding-top: 80px;
@@ -1448,11 +1492,18 @@ body {
   font-size: 24px;
   line-height: 33px;
   color: #0c0b24; }
+  @media (max-width: 374px) {
+    .sign-box__tab {
+      font-size: 18px;
+      line-height: 26px; } }
 
 .sign-box__tab-item {
   min-width: 136px;
   margin-bottom: 20px;
   text-align: center; }
+  @media (max-width: 374px) {
+    .sign-box__tab-item {
+      min-width: 120px; } }
   .sign-box__tab-item.active .sign-box__tab::before {
     content: '';
     position: absolute;
@@ -1556,7 +1607,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
-  .sign-box__eye-btn--show {
+  .sign-box__eye-btn.active {
     background-image: url("../img/eye-on.svg"); }
 
 .sign-box__row {
