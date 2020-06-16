@@ -164,7 +164,7 @@
   background-position: center;
   background-size: contain;
 
-  &--show {
+  &.active {
     background-image: url('../img/eye-on.svg');
   }
 }
