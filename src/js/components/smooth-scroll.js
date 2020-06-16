@@ -1,3 +1,3 @@
-new SmoothScroll('a[href^="#"]', {
+new SmoothScroll('a[href^="/#"]', {
 	speed: 200,
 });
