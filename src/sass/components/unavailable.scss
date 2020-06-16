@@ -1,0 +1,37 @@
+.unavailable {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.unavailable__top {
+  padding-top: 108px;
+  flex-grow: 2;
+  background-color: $blue;
+  background-image: url('../img/503.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.unavailable__bottom {
+  flex-grow: 1;
+}
+
+.unavailable__title {
+  margin: 32px auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: $gray;
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 67px;
+  }
+}
+
+.unavailable__btn {
+  margin-bottom: 30px;
+}

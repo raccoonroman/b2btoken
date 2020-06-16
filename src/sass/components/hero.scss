@@ -35,7 +35,7 @@
     }
   }
 
-  &--404::after {
+  &--no-icon::after {
     display: none;
   }
 }
@@ -59,11 +59,11 @@
     }
   }
 
-  &--404 {
+  &--no-icon {
     padding-bottom: 0;
   }
 
-  &--404::after {
+  &--no-icon::after {
     display: none;
   }
 }
@@ -127,7 +127,7 @@
     padding-right: 15px;
   }
 
-  &:first-child {
+  &--sh0 {
     flex-shrink: 0;
   }
 }

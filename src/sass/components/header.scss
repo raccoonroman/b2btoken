@@ -7,6 +7,14 @@
   @include desktop {
     padding: 15px 0;
   }
+
+  &--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+  }
 }
 
 .header__nav-wrapper {
