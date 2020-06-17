@@ -61,7 +61,17 @@
           </svg>
         </button>
       </nav>
-      <a class="header__nav-link-language" href="404.html">Ua</a>
+      <div class="header__language">
+        <a class="header__language-link header__language-link--current">Ua</a>
+        <ul class="header__language-list">
+          <li class="header__language-item">
+            <a class="header__language-link" href="404.html">Ru</a>
+          </li>
+          <li class="header__language-item">
+            <a class="header__language-link" href="404.html">En</a>
+          </li>
+        </ul>
+      </div>
       <a class="button button--red header__nav-button header__nav-button--desktop" href="https://b2btoken.gold/my/">почати зараз</a>
     </div>
   </div>
@@ -168,6 +178,12 @@
       <small class="graphic__tip">Для просмотра графика прокрутите фото.</small>
       <div class="graphic__wrapper">
         <img class="graphic__img" src="img/graphic.jpg" width="1198" height="405" alt="">
+      </div>
+      <div class="graphic__tooltip">
+        <svg class="graphic__tooltip-icon" width="101" height="101">
+          <use href="img/sprite.svg#growing-up"></use>
+        </svg>
+        <p class="graphic__tooltip-text">Таки растёт!</p>
       </div>
     </div>
   </section>

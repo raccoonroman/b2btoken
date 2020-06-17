@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   padding: 10px 0;
   text-align: center;
   color: $white;
@@ -172,35 +174,102 @@
   }
 }
 
-.header__nav-link-language {
+.header__language {
+  position: relative;
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2px;
   font-weight: 700;
   font-size: 10px;
   line-height: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: inherit;
-  border-radius: 50%;
-  border: 1px solid $white;
 
   @include desktop {
     margin-left: 16px;
     margin-right: 16px;
-    width: 50px;
-    height: 50px;
     font-size: $fs-mobile;
     line-height: $lh-mobile;
     font-weight: 400;
     text-transform: none;
   }
+}
 
-  &:active {
-    background-color: rgba($white, 0.3);
+.header__language-list {
+  @include list-reset;
+
+  position: absolute;
+  display: none;
+  top: calc(100% + 4px);
+  left: 0;
+  border: 1px solid $white;
+  border-radius: 16px;
+
+  @include desktop {
+    border-radius: 25px;
   }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.header__language-item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background-color: $white;
+  }
+}
+
+.header__language-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  padding: 6px 5px 4px;
+  color: inherit;
+  border-radius: 16px;
+  transition: color 0.2s;
+  background-color: $blue;
+
+  @include desktop {
+    min-width: 48px;
+    border-radius: 25px;
+    padding: 11px 10px;
+  }
+
+  &:hover {
+    color: $red;
+  }
+
+  &--current {
+    position: relative;
+    z-index: 1;
+    min-width: 32px;
+    border: 1px solid $white;
+
+    @include desktop {
+      min-width: 50px;
+    }
+  }
+
+  &--current:hover {
+    color: $white;
+  }
+}
+
+.header__language:hover .header__language-list {
+  display: block;
 }
